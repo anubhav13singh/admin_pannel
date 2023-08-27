@@ -117,16 +117,15 @@ export const tokens = (mode) => ({
           900: "#e1e2fe",
         },
       }),
-});
-
-        
+    });
+    
 
 // mui theme settings
 export const themeSettings = (mode) => {
   const colors = tokens(mode); // it returns all the color depending on the mode
-  return {
+  return { //this all done by mui theme..
     palette: {
-      mode: mode,
+      mode: mode,//except this condition
       ...(mode === "dark"
         ? {
             // palette values for dark mode
