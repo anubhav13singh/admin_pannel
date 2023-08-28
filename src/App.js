@@ -7,10 +7,10 @@ import Dashboard from "./pages/Dashboard";
 import Team from "./pages/Team";
 import Contacts from "./pages/Contacts";
 import Invoices from "./pages/Invoices";
+import Form from "./pages/Form";
 import Calendar from "./pages/Calendar";
 import Bar from "./pages/Bar";
 import FAQ from "./pages/FAQ";
-import Form from "./pages/Form";
 import Geography from "./pages/Geography";
 import Line from "./pages/Line";
 import Pie from "./pages/Pie";
@@ -32,8 +32,8 @@ function App() {
             <Route path="/Team" element={<Team />} />
             <Route path="/Contacts" element={<Contacts />} />
             <Route path="/Invoices" element={<Invoices />} />
-            <Route path="/Bar" element={<Bar />} />
             <Route path="/Form" element={<Form />} />
+            <Route path="/Bar" element={<Bar />} />
             <Route path="/Line" element={<Line />} />
             <Route path="/Pie" element={<Pie />} />
             <Route path="/Geography" element={<Geography />} />
