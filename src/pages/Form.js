@@ -9,7 +9,7 @@ const Form = () => {
 
   const handleFormSubmit = (values) => {
     console.log(values);
-  };
+  };//read the docs of formic and do it by seeing it
 
   return (
     <Box >
@@ -18,7 +18,7 @@ const Form = () => {
       <Formik
         onSubmit={handleFormSubmit}
         initialValues={initialValues}
-        validationSchema={checkoutSchema}
+        validationSchema={checkoutSchema}//declared at the bottom
       >
         {({
           values,
@@ -46,8 +46,8 @@ const Form = () => {
                 onChange={handleChange}
                 value={values.firstName}
                 name="firstName"
-                error={!!touched.firstName && !!errors.firstName}
-                helperText={touched.firstName && errors.firstName}
+                error={!!touched.firstName && !!errors.firstName}// Whether there's an error for the field.
+                helperText={touched.firstName && errors.firstName}// Error message to display.
                 sx={{ gridColumn: "span 2" }}
               />
               <TextField
@@ -133,7 +133,7 @@ const Form = () => {
 const phoneRegExp =
   /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/;
   
-//Yup is a schema builder for runtime value parsing and validation.
+//Yup is a schema validation library that works well with Formik to validate form inputs.
 const checkoutSchema = yup.object().shape({
   firstName: yup.string().required("required"),
   lastName: yup.string().required("required"),
@@ -156,3 +156,8 @@ const initialValues = {
 };
 
 export default Form;
+
+
+// The purpose of using !! is to ensure that you have a clear and consistent boolean representation of a value, regardless of its original type. This can be useful in situations where you want to ensure that you're dealing with boolean values, such as in conditional logic or comparisons.
+
+// The double exclamation marks are used to ensure that both touched.firstName and errors.firstName are coerced into boolean values. This is done so that the && operator can perform a logical AND operation on them, producing an accurate boolean result for the error prop.

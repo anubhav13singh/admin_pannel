@@ -9,8 +9,8 @@ import Contacts from "./pages/Contacts";
 import Invoices from "./pages/Invoices";
 import Form from "./pages/Form";
 import Calendar from "./pages/Calendar";
-import Bar from "./pages/Bar";
 import FAQ from "./pages/FAQ";
+import Bar from "./pages/Bar";
 import Geography from "./pages/Geography";
 import Line from "./pages/Line";
 import Pie from "./pages/Pie";
@@ -33,12 +33,12 @@ function App() {
             <Route path="/Contacts" element={<Contacts />} />
             <Route path="/Invoices" element={<Invoices />} />
             <Route path="/Form" element={<Form />} />
+            <Route path="/Calendar" element={<Calendar />} />
+            <Route path="/FAQ" element={<FAQ />} /> 
             <Route path="/Bar" element={<Bar />} />
             <Route path="/Line" element={<Line />} />
             <Route path="/Pie" element={<Pie />} />
             <Route path="/Geography" element={<Geography />} />
-            <Route path="/Calendar" element={<Calendar />} />
-            <Route path="/FAQ" element={<FAQ />} /> 
            </Routes> 
          </Box>
        

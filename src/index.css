@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 ::-webkit-scrollbar{
-  width: 10px;
+ display: none;
 }
 ::-webkit-scrollbar-thumb{
   background: #88687690;

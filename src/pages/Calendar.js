@@ -88,7 +88,7 @@ import { tokens } from "../Theme";
             </Box>
     
             {/* CALENDAR */}
-            <Box flex="1 1 100%" ml="15px">
+            <Box  flex="1 1 100%" ml="15px">
               <FullCalendar
                 height="75vh"
                 plugins={[
