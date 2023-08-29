@@ -175,7 +175,6 @@ const Dashboard = () => {
         >
           <Box
             borderBottom={`4px solid ${colors.primary[500]}`}
-            color={colors.grey[100]}
             p="15px"
           >
             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
